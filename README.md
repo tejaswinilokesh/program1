@@ -1,4 +1,4 @@
-# program1
+# lab program1
 creating an array 
 #include <stdio.h>
 #include <stdlib.h>
