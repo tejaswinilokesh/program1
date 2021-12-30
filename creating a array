@@ -1,0 +1,31 @@
+  case CHOICE_DISPLAY:
+    if (array == NULL) {
+      printf("Array is not initialized yet. Please first create an array\n");
+      continue;
+    }
+    fn_display(arrsize, array);
+    break;
+
+  case CHOICE_INSERT:
+    if (array == NULL) {
+      printf("Array is not initialized yet. Please first create an array\n");
+      continue;
+    }
+    fn_insert(arrsize, array);
+    break;
+
+  case CHOICE_DELETE:
+    if (array == NULL) {
+      printf("Array is not initialized yet. Please first create an array\n");
+      continue;
+    }
+    fn_delete(arrsize, array);
+    break;
+
+  case CHOICE_EXIT:
+  default:
+    fn_exit(array);
+    array = NULL;
+    exit(0);
+    break;
+}
